@@ -1,0 +1,103 @@
+
+Claro, aqui estão 150 comandos Git e suas utilidades:
+
+git init: Inicializa um novo repositório Git local.
+git clone [URL]: Clona um repositório remoto para o seu computador.
+git add [arquivo]: Adiciona um arquivo ao índice para ser commitado.
+git commit -m "[mensagem]": Registra as mudanças no repositório local, com uma mensagem de descrição.
+git push: Envia os commits locais para o repositório remoto no GitHub.
+git pull: Obtém as mudanças do repositório remoto e as incorpora ao repositório local.
+git status: Mostra o estado atual do repositório local (arquivos modificados, adicionados, etc.).
+git branch: Lista as branches existentes no repositório local.
+git checkout [branch]: Muda para uma branch específica.
+git merge [branch]: Incorpora as alterações de uma branch na branch atual.
+git remote add [nome] [url]: Adiciona um repositório remoto com um nome específico.
+git remote -v: Lista os repositórios remotos configurados.
+git log: Exibe o histórico de commits.
+git tag [nome]: Cria uma tag para marcar um ponto específico na história do repositório.
+git fetch: Obtém as últimas alterações do repositório remoto sem fazer merge.
+git diff: Mostra as diferenças entre o arquivo local e o commit mais recente.
+git stash: Salva temporariamente as mudanças locais para poder trabalhar em outra coisa.
+git reset [arquivo]: Remove um arquivo do índice (área de preparação).
+git rm [arquivo]: Remove um arquivo do repositório e do índice.
+git mv [arquivo_antigo] [arquivo_novo]: Move ou renomeia um arquivo.
+git fetch [repositorio_remoto]: Obtém as últimas alterações do repositório remoto sem fazer merge.
+git pull [repositorio_remoto] [branch]: Obtém as mudanças do repositório remoto e as incorpora ao repositório local.
+git push [repositorio_remoto] [branch]: Envia os commits locais para o repositório remoto.
+git stash list: Lista todas as stashes.
+git stash apply: Aplica a última stash.
+git stash drop: Descarta a última stash.
+git checkout -- [arquivo]: Descarta as mudanças em um arquivo no diretório de trabalho.
+git config --global user.name "[Seu Nome]": Configura o nome do usuário globalmente.
+git config --global user.email "[Seu Email]": Configura o email do usuário globalmente.
+git config --global core.editor "[Editor de Texto]": Configura o editor de texto padrão.
+git config --list: Lista todas as configurações do Git.
+git config --global --unset [chave]: Remove uma configuração global.
+git config --unset [chave]: Remove uma configuração local.
+git clone [URL] [Nome do Diretório]: Clona um repositório em um diretório específico.
+git clone --depth [número] [URL]: Clona um repositório com um histórico de profundidade limitada.
+git add .: Adiciona todos os arquivos ao índice.
+git add -A: Adiciona todos os arquivos e remove arquivos deletados do índice.
+git commit -am "[mensagem]": Adiciona e comita ao mesmo tempo (apenas para arquivos modificados).
+git branch [nome_da_branch]: Cria uma nova branch.
+git checkout -b [nome_da_branch]: Cria e muda para uma nova branch.
+git branch -d [nome_da_branch]: Deleta uma branch localmente.
+git branch -m [nome_antigo] [nome_novo]: Renomeia uma branch.
+git push origin :[nome_da_branch]: Deleta uma branch remota.
+git remote add [nome] [url]: Adiciona um repositório remoto com um nome específico.
+git push -u [repositorio_remoto] [branch]: Define o upstream para a branch e faz o push.
+git push --tags: Envia todas as tags criadas para o repositório remoto.
+git mergetool: Abre uma ferramenta de merge para resolver conflitos.
+git diff [branch_origem] [branch_destino]: Mostra as diferenças entre duas branches.
+git rebase [branch]: Reorganiza os commits na branch atual, movendo-os para o topo da branch especificada.
+git log --oneline: Exibe o histórico de commits em uma linha por commit.
+git log --graph: Exibe o histórico de commits em forma de grafo.
+git log --author="[nome_do_autor]": Filtra o histórico por autor.
+git log --grep="[palavra_chave]": Filtra o histórico por mensagem de commit.
+git tag -a [nome_tag] -m "[mensagem]": Cria uma nova tag anotada com uma mensagem.
+git tag -d [nome_tag]: Deleta uma tag localmente.
+git push [repositorio_remoto] [nome_tag]: Envia uma tag específica para o repositório remoto.
+git push [repositorio_remoto] --tags: Envia todas as tags para o repositório remoto.
+git difftool: Abre uma ferramenta de diff para visualizar as diferenças.
+git checkout [commit]: Move o HEAD para um commit específico.
+git revert [commit]: Desfaz um commit específico, criando um novo commit.
+git reset [commit]: Reseta o HEAD para um commit específico.
+git cherry-pick [commit]: Aplica um commit específico em cima da branch atual.
+git clean -n: Lista os arquivos que serão removidos pelo comando git clean.
+git clean -f: Remove os arquivos listados pelo comando git clean -n.
+git fetch --prune: Remove referências locais de branches deletadas no repositório remoto.
+git submodule add [URL] [Diretório]: Adiciona um submódulo ao repositório.
+git submodule init: Inicializa submódulos.
+git submodule update: Atualiza os submódulos para os commits mais recentes.
+git submodule foreach [comando]: Executa um comando em cada submódulo.
+git ls-files: Lista arquivos no índice.
+git ls-tree [commit]: Lista o conteúdo de uma árvore de objetos.
+git archive --format=[formato] -o [arquivo] [commit]: Exporta o conteúdo de um repositório em um arquivo.
+git blame [arquivo]: Mostra quem modificou cada linha de um arquivo.
+git bisect start: Inicia uma busca binária para encontrar um commit específico.
+git bisect bad: Marca o commit atual como ruim durante uma busca binária.
+git bisect good [commit]: Marca um commit como bom durante uma busca binária.
+git bisect reset: Termina uma busca binária e retorna para a HEAD.
+git reflog: Exibe o histórico de referências (HEADs anteriores, reset, etc.).
+git grep [padrão]: Procura por um padrão em arquivos rastreados.
+git grep -n [padrão]: Procura por um padrão em arquivos rastreados, mostrando números de linha.
+git grep -p [padrão]: Procura por um padrão em arquivos rastreados, mostrando contexto.
+git checkout [branch_remota]: Cria uma branch local a partir de uma branch remota.
+git branch -r: Lista todas as branches remotas.
+git branch -a: Lista todas as branches locais e remotas.
+git log --stat: Exibe estatísticas de modificação junto com o log de commits.
+git log --pretty=[formato]: Exibe o log de commits em um formato personalizado.
+git log --since=[data]: Exibe o log de commits desde uma data específica.
+git log --until=[data]: Exibe o log de commits até uma data específica.
+git log --author="[nome]" --since=[data]: Filtra o log de commits por autor e data.
+git log --graph --decorate --oneline: Exibe um log de commits compacto e legível.
+git log --graph --decorate --oneline --all: Exibe um log de commits compacto e legível, incluindo todas as branches.
+git show [commit]: Exibe informações detalhadas sobre um commit específico.
+git show [commit]:[arquivo]: Exibe o conteúdo de um arquivo em um commit específico.
+git show-ref: Exibe referências (branches e tags) juntamente com os hashes dos commits.
+git bisect visualize: Abre uma interface gráfica para visualizar a busca binária.
+git bisect run [comando]: Automatiza a busca binária executando um comando em cada passo.
+git clean -df: Remove arquivos não rastreados e diretórios vazios.
+git clean -xdf: Remove arquivos não rastreados, diretórios vazios e submódulos não rastreados.
+git diff --staged: Mostra as diferenças entre os arquivos no índice e o último commit.
+git difftool --staged: Abre uma ferramenta de diff para visualizar as diferenças entre os arquivos no
